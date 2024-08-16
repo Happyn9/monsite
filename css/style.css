@@ -1486,10 +1486,17 @@ html
     .page7 .even-past .carte-even .image{
         border-radius: 5px;
         place-content: center;
+        margin: auto;
     }
     .page7 .even-past .carte-even .carre
     {
         align-items: center;
+    }
+    .page7 .even-past .carre{
+        display: block;
+        gap: 25px;
+        padding: 10px;
+        cursor: pointer;
     }
     .page7 .even-past .carte-even .carre p
     {
@@ -1789,8 +1796,8 @@ html
         height: 25px;
     }
     .page7 .even-past .carte-even .image{
-        width: 200px;
-        height: 200px;
+        width: 350px;
+        height: 220px;
         border-radius: 5px;
         place-content: center;
     }
