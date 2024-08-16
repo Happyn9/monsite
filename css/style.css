@@ -1227,10 +1227,11 @@ html
         color: rgb(247, 219, 167);
     }
     .page7 .even-past .carte-even .image{
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 200px;
         border-radius: 5px;
         place-content: center;
+        margin: auto;
     }
     /* slide */
     .page8 section{
@@ -1291,6 +1292,12 @@ html
     }
     .manual-btn {
         border: 2px groove rgba(40, 98, 134, 0.877);
+    }
+    .page7 .even-past .carre{
+        display: block;
+        gap: 25px;
+        padding: 10px;
+        cursor: pointer;
     }
     /* contact page*/
     .contact-page h1
@@ -1392,6 +1399,9 @@ html
     }
     .actu-page section .haut .telephone{
         display: none;
+    }
+    .page10 h1{
+        color: whitesmoke;
     }
 
 }
