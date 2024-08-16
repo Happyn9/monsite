@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">   <!-- Ma page entière-->
+
+        <!-- My header -->
+
+        <header>
+
+            <div class="header">
+
+                <div id="logo">
+
+                    <img src="css/img/vendredi-logo.png" alt="logo">
+                    <h1>VENDREDI</h1>
+
+                </div>
+
+                <nav>
+                    <ul class="nav-bar">
+
+                        <li><a href="index.html" class="element">accueil</a></li>
+                        <li><a href="even.html" class="element">évenements</a></li>
+                        <li><a href="about.html" class="element">à propos</a></li>
+                        <li><a href="actu.html" class="element">actualités</a></li>
+                        <li><a href="mem.html" class="element">membres</a></li>
+                        <li><a href="coor.html" class="element">sièges</a></li>
+                        <li><a href="contact.html" class="vert1">connexion</a></li>
+                        <li><a href="adherer.html" class="vert">adherer</a></li>
+
+                    </ul>
+
+                    <div class="mini-device"> <!-- For mini devices-->
+
+                        <ul>
+
+                            <li><a href="adherer.html" class="vert">Adherer</a></li>
+                            <li>
+                                <a href="#" class="cha">
+                                    <i class="fa-solid fa-bars"></i>
+                                </a>
+                            </li>
+                            <li><a href="#" class="hamb">&#9776;</a></li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </header>
+        <main>
+            <section class="contact-page">
+                <div class="explication">
+                    <h1>Comment ça marche</h1>
+                    <p>Euh bien, comment vous le savez  notre association a toujours été proche de vous alors l'adhésion à la dite association est presque gratuite et elle se fait de deux différentes façons:
+                        elle est soit online ou soit moyennant nos différents Bureaux. Tout dépend de l"option que vous aurez obtée et les frais se présentent de 3 manières différentes. Vous l'avez sûrement remarqué sur notre formulaire.
+                        Pour les régions n'ayant toujours de siége, on profite de  l'occassion pour vous en parler et vous mettre au parfum que vous n'aurez qu'à patienter juste 1 mois, Question pour nous de lancer ce projet qui nous est si précieux.</p>
+                </div>
+                <div class="my_box">
+                    <form action="#" method="post">
+                        <h1>Adherer à notre Association</h1>
+                        <div class="utilisateur">
+                            <label for="user_name"><i class="fa-solid fa-user"></i></label>
+                            <input type="text" name="user_name" id="user_name" pattern="[Aa-Zz]" required>
+                        </div>
+                        <div class="mail">
+                            <label for="mail"><i class="fa-solid fa-envelope"></i></label>
+                            <input type="email" name="mail" id="mail" required>
+                        </div>
+                        <div class="mot-passe">
+                            <label for="nom"><i class="fa-solid fa-lock"></i></label>
+                            <input type="password" name="password" id="password" maxlength="8" required pattern="[a-z0-9]+[@]">
+                        </div>
+                        <div class="check">
+                            <label for="couple">Couple(20$)</label>
+                            <input type="checkbox" name="couple" id="couple">
+                            <label for="Celibataire">Celibataire(10$)</label>
+                            <input type="checkbox" name="Celibataire" id="Celibataire">
+                            <label for="autres">Autres(5$)</label>
+                            <input type="checkbox" name="autres" id="autres">
+                        </div>
+                        <div class="select">
+                            <label for="villes">Dans quel territoire restez-vous?</label>
+                            <select name="villes" id="villes">
+                                <optgroup label="LUALABA">
+                                    <option value="kolwezi">Kolwezi</option>
+                                    <option value="fungurume">Fungurume</option>
+                                    <option value="lualaba">Lualaba</option>
+                                    <option value="mutshatsha">Mutshatsha</option>
+                                    <option value="kasaji">Kasaji</option>
+                                </optgroup>
+                                <optgroup label="KAMINA">
+                                    <option value="kamina">Kamina</option>
+                                    <option value="Kabongo">Kabongo</option>
+                                    <option value="lualaba">Luen</option>
+                                </optgroup>
+                                <optgroup label="Haut-katanga">
+                                    <option value="likasi">Likasi</option>
+                                    <option value="lubumbashi">Lubumbashi</option>
+                                    <option value="Kasumbalesa">Kasumbalesa</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="envoyer">
+                            <button type="submit" class="bouton">Adherer</button>
+                        </div>
+                        <p>Il est important pour nous d'être à vos côtes et vous soutenir dans toutes circonstances</p>
+                    </form>
+                </div>
+            </section>
+            <div class="page10">
+                <h1>Commentaires</h1>
+                <div class="vos_messages">
+                    <form action="#">
+                        <textarea name="mon_message" id="mon_message" placeholder="Laisser un message " ></textarea>
+                        <div class="envoyer_message">
+                            <input type="reset" value="Annuler" class="bouton2">
+                            <input type="submit" value="Envoyer" class="bouton">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="index.html" class="element">Accueil</a></li>
+                    <li><a href="even.html" class="element">Evenements</a></li>
+                    <li><a href="about.html" class="element">à propos</a></li>
+                    <li>
+                        <img src="css/img/vendredi-logo.png" alt="logo">
+                    </li>
+                    <li><a href="actu.html" class="element">Actualités</a></li>
+                    <li><a href="mem.html" class="element">Membres</a></li>
+                    <li><a href="coor.html" class="element">Sièges</a></li>
+                </ul>
+            </nav>
+            <div class="neph">
+                <div class="info">
+                    <h1>S'informer</h1>
+                    <ul class="information">
+                        <li><a href="#">Nos Bureaux</a></li>
+                        <li><a href="#">Dossiers d'informations</a></li>
+                        <li><a href="#">à propos de nous</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h1>Contact us</h1>
+                    <address>nephtalitwite12@gmail.com<br/>097 453 3830</address>
+                </div>
+                <div class="plateformes">
+                    <h1>Suivez-nous sur</h1>
+                    <div class="reseaux">
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p><i class="fa-solid fa-copyright"> 2024-2025</i></p>
+            <p class="fleche">
+                <a href="#"> <i class="fas fa-arrow-up"></i> </a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
