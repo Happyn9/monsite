@@ -1662,7 +1662,7 @@ html
         outline: 1px groove #3daa6a;
         margin: 0 auto;
         color: #555;
-        padding: 0;
+        padding: 0px;
     }
     .page10 textarea[placeholder]
     {
