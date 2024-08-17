@@ -1118,7 +1118,9 @@ html
 }
 @media screen and (min-width:300px)  and (max-width:499px)
 {
-
+    *{
+        font-family: 'Montserrat';
+    }
     body{
         background-color: #000a0cde;
     }
@@ -1179,6 +1181,7 @@ html
         width: 90vw;
         margin: 0 auto;
         color: whitesmoke;
+        font-size: 1.1em;
     }
     .page1 section .paragraph h1{
         color: rgb(245, 224, 186);
@@ -1197,11 +1200,13 @@ html
     }
     .page2 article .ecrits-photo p{
         padding: 0;
-        margin: 0 auto;
+        margin: 10px auto;
         text-align: center;
+        font-size: 1.1em;
     }
     .page2 article h1{
         color: rgb(248, 221, 169);
+        font-size: 1.6em;
     }
     .page2 article .image-droite{
         width: 380px;
@@ -1219,7 +1224,7 @@ html
         color: rgba(245, 245, 245, 0.89);
         text-align: center;
         margin: 6px auto;
-        font-size: 1.1em 'Poppins';
+        font-size: 1.1em 'Montserrat';
     }
     .page2 article a{
         margin-top: 20px;
@@ -1228,16 +1233,13 @@ html
     {
         display: none;
     }
+    .page3 section .part .ecriture p{
+        font-size: 1.1em;
+        text-align: center;
+        width: 90vw;
+    }
     .page5 section{
         width: 80vw;
-    }
-    .page6 section .det h1{
-        color: wheat;
-        font-size: 2.5em;
-    }
-    .page6 section .det p{
-        color: rgb(211, 205, 205);
-        font-size: 1.1em;
     }
     .actu-page{
         height: 180vh;
@@ -1260,11 +1262,12 @@ html
         color: wheat;
         margin: 10px;
         text-align: center;
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
     .page7 .even-past .carte-even .carre p
     {
         color: rgb(240, 233, 233);
+        font-size: 1em;
     }
     .page7 .even-past .carte-even .carre h2
     {
@@ -1276,6 +1279,7 @@ html
     }
     .page7 .even-capital p{
         color: whitesmoke;
+        font-size: 1em;
     }
     .page7 .even-capital h1{
         color: rgb(247, 219, 167);
@@ -1292,7 +1296,7 @@ html
         width: 90vw;
     }
     .slideshow {
-        width: 85%;
+        width: 90%;
         height: 600px;
         overflow: hidden;
         position: relative;
@@ -1321,15 +1325,19 @@ html
     .slide .ev-text h1
     {
         font-size: 1.1em;
-        font-weight: 100 ;
+        font-weight: normal ;
         color: rgb(14, 53, 78);
+        text-align: center;
     }
     .slide .ev-text p
     {
         letter-spacing: 1px;
         font-size: 1em;
-        color: rgb(80, 76, 76);
+        color: rgb(88, 85, 85);
         padding: 10px;
+        font-weight: normal;
+        font-family: 'Montserrat';
+        text-align: center;
     }
     .slide img {
         width: 90%;
@@ -1339,13 +1347,14 @@ html
         width: 100%;
         top: 50%;
         left: 50%;
+        transform: translate(-50%,-50%);
         gap: 20px;
-        transform: translate(-50%,-90%);
         display: flex;
-        flex-direction: column;
     }
     .manual-btn {
-        border: 2px groove rgba(40, 98, 134, 0.877);
+        border: 3px groove rgba(248, 68, 13, 0.877);
+        backdrop-filter: blur(20px);
+        background-color: #000a0c7e;
     }
     .page7 .even-past .carre{
         display: block;
@@ -1362,8 +1371,13 @@ html
         padding: 0;
     }
     .contact-page .explication p{
-        width: 82vw;
+        width: 81vw;
         margin: 0 auto;
+        font-weight: normal;
+        font-family: 'Montserrat';
+        text-align: center;
+        padding: 0px;
+        word-spacing: 0px;
     }
     .contact-page .my_box form div
     {
@@ -1376,14 +1390,24 @@ html
     }
     .vos_messages .bouton2
     {
-        color: orangered;
+        color: rgb(3, 34, 48);
         letter-spacing: 1px;
         font-size: 1.2em;
+        width: 150px;
+        height: 40px;
+        padding: 0;
+    }
+    .vos_messages form .envoyer_message{
+        display: flex;
+        flex-direction: row;
     }
     .vos_messages .bouton
     {
         letter-spacing: 1px;
         font-size: 1.2em;
+        width: 150px;
+        height: 40px;
+        padding: 0;
     }
     .contact-page{
         background: white;
@@ -1517,12 +1541,11 @@ html
     }
     .page3 section{
         place-content: center;
-        background-color: #021114;
+        background-color: #101c1fb2;
         padding: 0;
     }
     .page3 section .part{
         flex-direction: column-reverse;
-        border: 1px solid;
         width: 95vw;
         margin: 0 auto;
         padding: 0;
@@ -1773,7 +1796,6 @@ html
     .page5 section{
         margin: -5px auto;
         padding: 10px;
-        border: 1px solid red;
     }
 }
 @media screen and (min-width:500px)  and (max-width:860px)
