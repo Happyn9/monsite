@@ -2,7 +2,7 @@
 {
     text-decoration: none;
     list-style-type: none;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Open Sans' sans-serif;
     font-weight: 100;
 }
 .container
@@ -396,7 +396,7 @@ em{
 
 .page5
 {
-    margin: auto;
+    margin: 0 auto;
 }
 .page5 section{
     width: 95vw;
@@ -472,7 +472,7 @@ em{
     display: flex;
     width: 100vw;
     margin: auto;
-    gap: 20px;
+    gap: 10px;
     padding: 10px;
 }
 .page7 .even-past{
@@ -914,7 +914,7 @@ em{
 {
     word-break: keep-all;
     padding: 1px;
-    font: normal 1em 'Montserrat';
+    font: normal 1em 'Open Sans';
 }
 .select
 {
@@ -1119,7 +1119,7 @@ html
 @media screen and (min-width:300px)  and (max-width:499px)
 {
     *{
-        font-family: 'Montserrat';
+        font-family: 'Open Sans' sans-serif;
     }
     body{
         background-color: #000a0cde;
@@ -1174,7 +1174,13 @@ html
         background-color: #000a0c;
     }
     em{
-        color: rgba(253, 255, 254, 0.527);
+        color: rgb(165, 115, 6);
+        background-color: #3a3d3d80;
+    }
+    .contact-page em{
+        background-color: #fafeff;
+        color: #056774;
+        letter-spacing: 1px;
     }
     .page1 section .paragraph p{
         padding: 0;
@@ -1203,6 +1209,7 @@ html
         margin: 10px auto;
         text-align: center;
         font-size: 1.1em;
+        color: rgba(245, 245, 245, 0.733);
     }
     .page2 article h1{
         color: rgb(248, 221, 169);
@@ -1221,10 +1228,10 @@ html
     {
         width: 90vw;
         padding: 2px;
-        color: rgba(245, 245, 245, 0.89);
+        color: rgba(245, 245, 245, 0.733);
         text-align: center;
         margin: 6px auto;
-        font-size: 1.1em 'Montserrat';
+        font-size: 1.1em 'Open Sans';
     }
     .page2 article a{
         margin-top: 20px;
@@ -1237,6 +1244,8 @@ html
         font-size: 1.1em;
         text-align: center;
         width: 90vw;
+        font-family: 'Open Sans' sans-serif;
+        color: rgba(245, 245, 245, 0.733);
     }
     .page5 section{
         width: 80vw;
@@ -1253,9 +1262,10 @@ html
         display: none;
     }
     .actu-page p{
-        color: whitesmoke;
+        color: rgba(245, 245, 245, 0.733);
         width: 90%;
         margin: auto;
+        font-size: 1.1em;
     }
     .actu-page h1
     {
@@ -1266,8 +1276,10 @@ html
     }
     .page7 .even-past .carte-even .carre p
     {
-        color: rgb(240, 233, 233);
+        color: rgba(245, 245, 245, 0.733);
         font-size: 1em;
+        font-family: 'Open Sans' sans-serif;
+        letter-spacing: 1px;
     }
     .page7 .even-past .carte-even .carre h2
     {
@@ -1278,8 +1290,9 @@ html
         color: rgb(197, 189, 189);
     }
     .page7 .even-capital p{
-        color: whitesmoke;
+        color: rgba(245, 245, 245, 0.733);
         font-size: 1em;
+        letter-spacing: 1px;
     }
     .page7 .even-capital h1{
         color: rgb(247, 219, 167);
@@ -1324,8 +1337,7 @@ html
     }
     .slide .ev-text h1
     {
-        font-size: 1.1em;
-        font-weight: normal ;
+        font-size: 1.2em;
         color: rgb(14, 53, 78);
         text-align: center;
     }
@@ -1335,8 +1347,7 @@ html
         font-size: 1em;
         color: rgb(88, 85, 85);
         padding: 10px;
-        font-weight: normal;
-        font-family: 'Montserrat';
+        font-family: 'Open Sans' sans-serif;
         text-align: center;
     }
     .slide img {
@@ -1352,9 +1363,10 @@ html
         display: flex;
     }
     .manual-btn {
-        border: 3px groove rgba(248, 68, 13, 0.877);
+        border: 3px groove rgb(248, 68, 13);
         backdrop-filter: blur(20px);
         background-color: #000a0c7e;
+        opacity: 0.5;
     }
     .page7 .even-past .carre{
         display: block;
@@ -1365,7 +1377,8 @@ html
     /* contact page*/
     .contact-page h1
     {
-        font: normal 1.3em 'Poppins';
+        font-family: 'Open Sans' sans-serif;
+        font-size:1.4em;
     }
     .explication{
         padding: 0;
@@ -1373,11 +1386,11 @@ html
     .contact-page .explication p{
         width: 81vw;
         margin: 0 auto;
-        font-weight: normal;
-        font-family: 'Montserrat';
+        font-family: 'Open Sans' sans-serif;
         text-align: center;
         padding: 0px;
         word-spacing: 0px;
+        color: rgb(102, 99, 99);
     }
     .contact-page .my_box form div
     {
