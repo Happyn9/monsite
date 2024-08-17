@@ -1477,14 +1477,27 @@ html
         backdrop-filter: blur(25px);
         border-bottom: 1px groove;
     }
+    .mini-device .fa-bars{
+        border: 1px solid;
+        padding: 10px;
+        color: rgb(240, 240, 240);
+        background-color: #000a0c7a;
+    }
+    .mini-device .vert{
+        color: rgb(240, 240, 240);
+        background-color: #000a0c7a;
+    }
     .mini-device ul a{
         padding: 10px;
         border: 1px solid;
     }
     header #logo{
         width: 30vw;
-        border-bottom: 1px groove rgba(245, 245, 245, 0.74);
         backdrop-filter: blur(25px);
+        background-color: #000a0c7a;
+    }
+    header #logo img{
+        filter: hue-rotate(250deg);
     }
     .page3 section{
         place-content: center;
@@ -1750,11 +1763,10 @@ html
 }
 @media screen and (min-width:500px)  and (max-width:860px)
 {
-    .mini-device .cha{
-        display: block;
-    }
-    #hamb{
-        display: none;
+    .mini-device .fa-bars{
+        color: rgb(5, 70, 90);
+        border: 1px solid;
+        padding: 10px;
     }
     #afficher ol{
         border: 1px solid rgb(59, 59, 57);
