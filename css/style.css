@@ -43,6 +43,43 @@ header #logo, header ul,header,nav, footer nav ul
 {
     display: none;
 }
+#afficher{
+    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    transition: height 0.5s ease, background-color 2s ease;
+    place-content: center;
+}
+#afficher.active {
+    display: block;
+    height: 40vh;
+    background-color: #000a0c7a;
+    place-items: center;
+}
+#afficher ol{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 30vh;
+    width: 60vw;
+    margin: auto;
+    place-items: center;
+}
+#afficher ol a{
+    color: whitesmoke;
+    font-size: 1.2em;
+    letter-spacing: 1.3px;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+#afficher ol a:hover{
+    color: rgb(15, 151, 230);
+}
 header #logo
 {
     width: 15vw;
@@ -413,14 +450,13 @@ em{
 }
 .page7{
     overflow: hidden;
-    margin: 20px auto;
+    margin: 5px auto;
 }
 .page7 section{
     display: flex;
     width: 100vw;
     margin: auto;
     gap: 20px;
-    place-content: center;
     padding: 10px;
 }
 .page7 .even-past{
@@ -475,6 +511,7 @@ em{
 {
     display: flex;
     flex-direction: column;
+    gap: 30px;
     width: 40vw;
     align-items: center;
     place-content: center;
@@ -487,8 +524,8 @@ em{
 }
 .page7 .even-capital .image
 {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     border-radius: 10px;
 }
 .page7 .even-capital .image img
@@ -1404,7 +1441,21 @@ html
     .page10 h1{
         color: whitesmoke;
     }
-
+    .page7{
+        margin: -40px auto;
+    }
+    .actu-page{
+        margin: 5px auto;
+    }
+    .page10 textarea{
+        background: #000a0c;
+        color: whitesmoke;
+        border: none;
+    }
+    .page10 textarea[placeholder]
+    {
+        color: rgb(255, 255, 255);
+    }
 }
 @media screen  and (max-width:860px)
 {
@@ -1552,35 +1603,40 @@ html
         margin: 20px auto;
     }
     .page10 textarea{
-        max-width: 40%;
+        max-width: 60%;
         min-width: 20%;
         max-height: 140px;
         min-height: 100px;
         border: 1px groove #18c9a2;
         outline: 1px groove #3daa6a;
         margin: 0 auto;
-        font-size: clamp(1.2em,8vw,1.4em);
         color: #555;
+        padding: 0;
     }
     .page10 textarea[placeholder]
     {
         text-align: center;
-        padding: 30px 70px;
+        padding: 30px 50px;
         letter-spacing: 1px;
-        word-spacing: 2px;
+        word-spacing: 1px;
+        font-size: 1.3em;
+    }
+    .contact-page textarea{
+        max-width: 80%;
+        border: 1px groove #18c9a2;
     }
     .page10 .envoyer_message{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        margin: 20px auto;
+        margin: 10px auto;
         gap: 10px;
     }
     /* contact page*/
     .contact-page {
         width: 95vw;
         padding: 0;
-        margin: 20px auto;
+        margin: -10px auto;
         height: 180vh;
     }
     .contact-page h1
@@ -1687,8 +1743,9 @@ html
         display: block;
     }
     .page5 section{
-        margin: 30px auto;
+        margin: -5px auto;
         padding: 10px;
+        border: 1px solid red;
     }
 }
 @media screen and (min-width:500px)  and (max-width:860px)
@@ -1696,8 +1753,11 @@ html
     .mini-device .cha{
         display: block;
     }
-    .hamb{
+    #hamb{
         display: none;
+    }
+    #afficher ol{
+        border: 1px solid rgb(59, 59, 57);
     }
     header{
         place-content: center;
@@ -1926,6 +1986,7 @@ html
         border-radius: 5px;
     }
 }
+
 /* preso */
 .preso{
     margin: 20px auto;

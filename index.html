@@ -8,6 +8,7 @@
     <title>Page d'accueil</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -27,7 +28,7 @@
                 </div>
 
                 <nav>
-                    <ul class="nav-bar">
+                    <ul class="nav-bar" id="menu_neph">
 
                         <li><a href="index.html" class="element">accueil</a></li>
                         <li><a href="even.html" class="element">évenements</a></li>
@@ -46,17 +47,33 @@
 
                             <li><a href="adherer.html" class="vert">Adherer</a></li>
                             <li>
-                                <a href="#" class="cha">
-                                    <i class="fa-solid fa-bars"></i>
+                                <a href="#" class="cha" id="hambu">
+                                    <i class="fa-solid fa-bars" ></i>
                                 </a>
                             </li>
-                            <li><a href="#" class="hamb">&#9776;</a></li>
+                            <li><a href="#" id="hamb" >&#9776;</a></li>
                         </ul>
-
                     </div>
-
+                    <div id="afficher">
+                        <ol id="menu_activer">
+                            <li><a href="index.html" class="element">accueil</a></li>
+                            <li><a href="even.html" class="element">évenements</a></li>
+                            <li><a href="about.html" class="element">à propos</a></li>
+                            <li><a href="actu.html" class="element">actualités</a></li>
+                            <li><a href="contact.html" class="element">Connexion</a></li>
+                        </ol>
+                    </div>
                 </nav>
-
+<script>
+    document.getElementById('hamb').addEventListener('click',function(){
+        var menu = document.getElementById('afficher');
+        menu.classList.toggle('active');
+    })
+    document.getElementById('hambu').addEventListener('click',function(){
+        var menu2 = document.getElementById('afficher');
+        menu2.classList.toggle('active');
+    })
+</script>
             </div>
 
         </header>
@@ -242,9 +259,13 @@
                         </div>
                     </div>
                     <div class="even-capital">
-                        <h1>Future Even</h1>
+                        <h1>Future Evens</h1>
                         <div class="image">
                             <img src="css/img/garcon-africain-1024x683_1.jpg" alt="PHOTO">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolor officia repudiandae soluta ipsa laudantium iste aperiam vel beatae, error vero saepe iusto, officiis, in fugit id dolore sit nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore recusandae eaque similique reprehenderit, sint eligendi mollitia? Amet quo culpa placeat aliquid saepe! Adipisci reprehenderit suscipit similique eum assumenda, expedita ut.</p>
+                        <div class="image">
+                            <img src="css/img/enf.png" alt="PHOTO">
                         </div>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolor officia repudiandae soluta ipsa laudantium iste aperiam vel beatae, error vero saepe iusto, officiis, in fugit id dolore sit nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore recusandae eaque similique reprehenderit, sint eligendi mollitia? Amet quo culpa placeat aliquid saepe! Adipisci reprehenderit suscipit similique eum assumenda, expedita ut.</p>
                         <a href="#" class="bouton">Decouvrez notre agenda</a>
