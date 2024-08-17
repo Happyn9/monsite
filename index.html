@@ -46,25 +46,29 @@
                         <ul>
 
                             <li><a href="adherer.html" class="vert">Adherer</a></li>
-                            <li>
+                            <li id="hambu-icon">
                                 <i class="fa-solid fa-bars" id="hambu" ></i>
+                                <i class="fa fa-times" id="close" ></i>
                             </li>
                         </ul>
                     </div>
                     <div id="afficher">
+
                         <ol id="menu_activer">
-                            <li><a href="index.html" class="element">accueil</a></li>
-                            <li><a href="even.html" class="element">évenements</a></li>
-                            <li><a href="about.html" class="element">à propos</a></li>
-                            <li><a href="actu.html" class="element">actualités</a></li>
-                            <li><a href="contact.html" class="element">Connexion</a></li>
+                            <li><a href="index.html" >accueil</a></li>
+                            <li><a href="even.html">évenements</a></li>
+                            <li><a href="about.html" >à propos</a></li>
+                            <li><a href="actu.html" >actualités</a></li>
+                            <li><a href="contact.html">Connexion</a></li>
                         </ol>
                     </div>
                 </nav>
         <script>
-            document.getElementById('hambu').addEventListener('click',function(){
-                var menu2 = document.getElementById('afficher');
-                menu2.classList.toggle('active');
+            document.getElementById('hambu-icon').addEventListener('click',function(){
+                var menu = document.getElementById('afficher');
+                var icon =document.getElementById('hambu-icon')
+                menu.classList.toggle('active');
+                icon.classList.toggle('active');
             })
         </script>
             </div>

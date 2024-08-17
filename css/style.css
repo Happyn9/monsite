@@ -57,7 +57,7 @@ header #logo, header ul,header,nav, footer nav ul
 #afficher.active {
     display: block;
     height: 40vh;
-    background-color: #000a0c7a;
+    background-color: #000a0c81;
     place-items: center;
 }
 #afficher ol{
@@ -65,20 +65,36 @@ header #logo, header ul,header,nav, footer nav ul
     flex-direction: column;
     gap: 20px;
     height: 30vh;
-    width: 60vw;
+    width: 80%;
     margin: auto;
-    place-items: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid;
 }
 #afficher ol a{
     color: whitesmoke;
     font-size: 1.2em;
     letter-spacing: 1.3px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     text-transform: capitalize;
 }
 #afficher ol a:hover{
     color: rgb(15, 151, 230);
+}
+#close{
+    display: none;
+    font-size: 24px;
+    color: whitesmoke;
+}
+#hambu-icon.active #close{
+    display: inline-block;
+    cursor: pointer;
+    background-color: #000a0c;
+    padding: 2px;
+}
+#hambu-icon.active #hambu{
+    display: none;
 }
 header #logo
 {
@@ -1539,8 +1555,7 @@ html
         width: 95vw;
         margin: 0 auto;
         padding: 0;
-        gap: 20px;
-        place-items: center;
+        gap: 10px;
     }
     .page7 .even-past{
         display: flex;
@@ -1877,8 +1892,15 @@ html
     .page7 .even-past .carre{
         display: block;
         gap: 25px;
-        padding: 10px;
+        padding: 0px;
         cursor: pointer;
+    }
+    #afficher{
+        display: none;
+        width: 100%;
+        position: fixed;
+        top: 25px;
+        left: 0;
     }
 }
 @media screen and (min-width:861px) and (max-width:1080px)
