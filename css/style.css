@@ -1534,14 +1534,15 @@ html
         border-bottom: 1px groove;
     }
     .mini-device .fa-bars{
-        border: 1px solid;
+        border: 1px ridge;
         padding: 10px;
-        color: rgb(240, 240, 240);
+        color: rgba(240, 240, 240, 0.651);
         backdrop-filter: blur(2px);
         background-color: #000a0c2c;
     }
     .mini-device .vert{
-        color: rgb(240, 240, 240);
+        color: whitesmoke;
+        border-color: rgba(240, 240, 240, 0.651);
         backdrop-filter: blur(2px);
         background-color: #000a0c2c;
     }
@@ -1551,7 +1552,7 @@ html
     }
     header #logo{
         width: 30vw;
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(0px);
         background-color: #000a0c2c;
     }
     header #logo img{
