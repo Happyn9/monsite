@@ -1116,7 +1116,7 @@ html
         margin: auto;
     }
 }
-@media screen and (min-width:300px)  and (max-width:499px)
+@media only screen and (min-width:300px)  and (max-width:499px) and (orientation: portrait)
 {
     *{
         font-family: 'Open Sans' sans-serif;
@@ -1146,7 +1146,7 @@ html
         margin: 5px 0px;
         border: 1px solid;
         padding: 0;
-        height: 120vh;
+        height: 90vh;
     }
     .page1 section{
         margin: 0 auto;
@@ -1228,7 +1228,8 @@ html
     {
         width: 90vw;
         padding: 2px;
-        color: rgba(245, 245, 245, 0.733);
+        color: rgba(245, 245, 245, 0.795);
+        letter-spacing: 1.1px;
         text-align: center;
         margin: 6px auto;
         font-size: 1.1em 'Open Sans';
@@ -1245,7 +1246,8 @@ html
         text-align: center;
         width: 90vw;
         font-family: 'Open Sans' sans-serif;
-        color: rgba(245, 245, 245, 0.733);
+        color: rgba(245, 245, 245, 0.795);
+        letter-spacing: 1px;
     }
     .page5 section{
         width: 80vw;
@@ -1262,7 +1264,8 @@ html
         display: none;
     }
     .actu-page p{
-        color: rgba(245, 245, 245, 0.733);
+        color: rgba(245, 245, 245, 0.795);
+        letter-spacing: 1px;
         width: 90%;
         margin: auto;
         font-size: 1.1em;
@@ -1272,14 +1275,14 @@ html
         color: wheat;
         margin: 10px;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
     .page7 .even-past .carte-even .carre p
     {
-        color: rgba(245, 245, 245, 0.733);
+        color: rgba(245, 245, 245, 0.795);
+        letter-spacing: 1.2px;
         font-size: 1em;
         font-family: 'Open Sans' sans-serif;
-        letter-spacing: 1px;
     }
     .page7 .even-past .carte-even .carre h2
     {
@@ -1510,7 +1513,7 @@ html
         color: rgb(255, 255, 255);
     }
 }
-@media screen  and (max-width:860px)
+@media only screen  and (max-width:860px) and (orientation: portrait)
 {
     .header nav{
         width: 60vw;
@@ -1527,18 +1530,20 @@ html
         margin: auto;
         padding: 0;
         height: 40px;
-        backdrop-filter: blur(25px);
+        backdrop-filter: blur(1px);
         border-bottom: 1px groove;
     }
     .mini-device .fa-bars{
         border: 1px solid;
         padding: 10px;
         color: rgb(240, 240, 240);
-        background-color: #000a0c7a;
+        backdrop-filter: blur(2px);
+        background-color: #000a0c2c;
     }
     .mini-device .vert{
         color: rgb(240, 240, 240);
-        background-color: #000a0c7a;
+        backdrop-filter: blur(2px);
+        background-color: #000a0c2c;
     }
     .mini-device ul a{
         padding: 10px;
@@ -1546,8 +1551,8 @@ html
     }
     header #logo{
         width: 30vw;
-        backdrop-filter: blur(25px);
-        background-color: #000a0c7a;
+        backdrop-filter: blur(2px);
+        background-color: #000a0c2c;
     }
     header #logo img{
         filter: hue-rotate(250deg);
@@ -1811,7 +1816,7 @@ html
         padding: 10px;
     }
 }
-@media screen and (min-width:500px)  and (max-width:860px)
+@media only screen and (min-width:500px)  and (max-width:860px) and (orientation: portrait)
 {
     .mini-device .fa-bars{
         color: rgb(5, 70, 90);
